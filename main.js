@@ -2,7 +2,7 @@ import mapboxgl from 'mapbox-gl';
 import WindLayer from '@jindin/mapbox-gl-wind-layer';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNqeWhpandmazAyYmYzYnBtZzJxM3hlM2EifQ.ZLKIqBxG97_HklFj0_1RBQ';
+mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
 
 const map = new mapboxgl.Map({
   container: 'map',
@@ -68,7 +68,7 @@ map.on('load', () => {
           frameRate: 30, //less framerate is equal to more particle loaded per frame
           maxAge: 60,  //age of particles
           globalAlpha: 0.95, //particles because smalleer in size for less value default value was 0.9 it breaks closeup above 1
-          velocityScale: 0.01, //Make particles go fast default value was 0.01
+          velocityScale: 0.02, //Make particles go fast default value was 0.01
           paths: 7000
         }
       });

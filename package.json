@@ -13,5 +13,10 @@
   },
   "dependencies": {
     "mapbox-gl": "^3.5.2"
-  }
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
